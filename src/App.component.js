@@ -1,6 +1,8 @@
 import React from 'react';
 import Menu from './components/Menu/Menu.component';
 import Header from './components/Header/Header.component';
+import Panel from './components/Panel/Panel.component';
+import TrialForm from './components/TrialForm/TrialForm.component';
 import {
   GlobalStyle,
   View,
@@ -21,6 +23,9 @@ const App = props => {
               title="Você está a poucos passos de otimizar suas campanhas!"
               subtitle="Queremos conhecer mais sobre sua empresa para melhorar sua experiência com a Voxus."
             />
+            <Panel>
+              <TrialForm onSubmit={values => console.log(values)}/>
+            </Panel>
           </Content>
         </Container>
       </View>
