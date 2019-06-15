@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/voxus-test/precache-manifest.30d4a2bcbb9cdb3c5b20c03ba316415e.js"
+  "/voxus-test/precache-manifest.b671f5ad5d6f5d47d3a311dff24e4cf7.js"
 );
 
 self.addEventListener('message', (event) => {
