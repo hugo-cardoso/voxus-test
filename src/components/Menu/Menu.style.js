@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   background-color: #FFF;
   border-bottom: 1px solid rgba(45, 58, 64, 0.1);
   box-sizing: border-box;
+  z-index: 10;
 `;
 
 const Container = styled(AppBase.Container)`
