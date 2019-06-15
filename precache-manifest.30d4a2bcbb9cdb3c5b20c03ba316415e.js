@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cc32fbd85b1bfe674c9798ea0c55d404",
+    "revision": "1b08f3c025173ad25a2f91d9d8b13f51",
     "url": "/voxus-test/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/voxus-test/static/js/2.5023d9ab.chunk.js"
   },
   {
-    "revision": "d3615e04e747b387653d",
-    "url": "/voxus-test/static/js/main.2b7cb807.chunk.js"
+    "revision": "bbf9a140079e2caf58ab",
+    "url": "/voxus-test/static/js/main.59a199f4.chunk.js"
   },
   {
     "revision": "2fed98b8af537c21dfe3",
