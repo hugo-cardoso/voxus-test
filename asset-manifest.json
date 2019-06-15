@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/voxus-test/static/js/main.aabcab7a.chunk.js",
+    "main.js.map": "/voxus-test/static/js/main.aabcab7a.chunk.js.map",
+    "runtime~main.js": "/voxus-test/static/js/runtime~main.57383f05.js",
+    "runtime~main.js.map": "/voxus-test/static/js/runtime~main.57383f05.js.map",
+    "static/js/2.5023d9ab.chunk.js": "/voxus-test/static/js/2.5023d9ab.chunk.js",
+    "static/js/2.5023d9ab.chunk.js.map": "/voxus-test/static/js/2.5023d9ab.chunk.js.map",
+    "index.html": "/voxus-test/index.html",
+    "precache-manifest.dca1a56effa9499d204e7e49f7e1ca96.js": "/voxus-test/precache-manifest.dca1a56effa9499d204e7e49f7e1ca96.js",
+    "service-worker.js": "/voxus-test/service-worker.js",
+    "static/media/bg_Illustration.png": "/voxus-test/static/media/bg_Illustration.d058f21d.png",
+    "static/media/logo.svg": "/voxus-test/static/media/logo.492bf844.svg",
+    "static/media/logo_gray.svg": "/voxus-test/static/media/logo_gray.c975c1d8.svg"
+  }
+}
