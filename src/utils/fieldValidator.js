@@ -10,7 +10,7 @@ const isValidMinLength = (value, length) => value.toString().length > length;
 
 const isValidMaxLength = (value, length) => (value.length > 0 && value.length <= length);
 
-const validadeByType = (type, value) => {
+const validateByType = (type, value) => {
   switch (type) {
     case 'EMAIL':
       return {
@@ -31,7 +31,7 @@ const validadeByType = (type, value) => {
   }
 }
 
-const validadeByOptions = (options, value) => {
+const validateByOptions = (options, value) => {
   const keys = Object.keys(options);
   const validations = keys.map(option => {
     switch (option) {
@@ -72,8 +72,8 @@ const validate = (options, value) => {
   }
 
   return keys.includes('type') 
-  ? validadeByType(options['type'], value) 
-  : validadeByOptions(options, value);
+  ? validateByType(options['type'], value) 
+  : validateByOptions(options, value);
 };
 
 export {
