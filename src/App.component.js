@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { sendForm } from './services/VoxusService';
 import Menu from './components/Menu/Menu.component';
 import Header from './components/Header/Header.component';
@@ -9,14 +9,17 @@ import {
   GlobalStyle,
   View,
   Container,
-  Content
+  Content,
+  AuxText
 } from './App.style';
 
 const App = () => {
+  const [sendedForm, setSendedForm] = useState(false);
 
   const handleSubmitForm = (values) => {
     console.log(values);
     sendForm(values);
+    setSendedForm(true);
   }
 
   return (
@@ -33,6 +36,11 @@ const App = () => {
             <Panel>
               <TrialForm onSubmit={values => handleSubmitForm(values)}/>
             </Panel>
+            {
+              sendedForm
+              ? <AuxText>*Para usar o trial grátis você precisa ser um e-commerce e concordar com os termos e requisitos do trial gratuito. Saiba mais em: <a href="https://www.voxus.com.br/privacidade.html" target="_blank">Termos e requisitos de trial gratuito</a></AuxText>
+              : ''
+            }
           </Content>
         </Container>
         <Footer />

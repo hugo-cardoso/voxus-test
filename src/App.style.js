@@ -41,11 +41,31 @@ const Content = styled.div`
   flex-direction: column;
   box-sizing: border-box;
   padding-bottom: 166px;
+  position: relative;
+`;
+
+const AuxText = styled.p`
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  width: 100%;
+  text-align: center;
+  color: #748296;
+  position: absolute;
+  top: calc(100% - 166px + 40px);
+  left: 0;
+
+  a {
+    color: #326fff;
+    text-decoration: underline;
+  }
 `;
 
 export {
   GlobalStyle,
   View,
   Container,
-  Content
+  Content,
+  AuxText
 };
