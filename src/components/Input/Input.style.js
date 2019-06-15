@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   height: 42px;
   margin-bottom: 30px;
   background-color: #FFF;
-  border: 1px solid rgba(116, 130, 150, 0.2);
+  border: 1px solid ${({hasFocus}) => hasFocus ? '#326fff' : 'rgba(116, 130, 150, 0.2)' };
   border-radius: 3px;
   display: flex;
   position: relative;
@@ -37,6 +37,7 @@ const Field = styled.input`
   color: #000;
   letter-spacing: 0.0125em;
   font-weight: 400;
+  border-radius: 3px;
 
   :focus {outline: none;}
 `;

@@ -5,7 +5,8 @@ import Input from '../Input/Input.component';
 import InputPhone from '../InputPhone/InputPhone.component';
 import Select from '../Select/Select.component';
 import {
-  Form
+  Form,
+  Message
 } from './TrialForm.style';
 
 const ALLOWANCE_ITEMS = [
@@ -31,6 +32,9 @@ const ALLOWANCE_ITEMS = [
 ];
 
 const TrialForm = ({onSubmit}) => {
+
+  const [labelButton, setLabelButton] = useState('Experimentar gratuitamente');
+  const [sendedForm, setSendedForm] = useState(false);
 
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
@@ -77,6 +81,8 @@ const TrialForm = ({onSubmit}) => {
       allowanceError.status
     ) {
       onSubmit({name, phone, email, company, url, allowance});
+      setLabelButton('Obrigado!');
+      setSendedForm(true);
     }
   }
 
@@ -121,9 +127,15 @@ const TrialForm = ({onSubmit}) => {
       />
       <Button 
         type="submit"
-        label="Experimentar gratuitamente"
+        variant={sendedForm ? 'outline' : 'primary'}
+        label={labelButton}
         onClick={() => handleSubmit()}
         />
+        {
+          sendedForm
+          ? <Message>Entraremos em contato em até 24hs úteis.</Message>
+          : ''
+        }
     </Form>
   )
 }

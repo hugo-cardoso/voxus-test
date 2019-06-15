@@ -19,12 +19,14 @@ const COUNTRY_OPTIONS = [
   {
     id: 0,
     icon: brazilIcon,
-    value: '+55'
+    value: '+55',
+    name: 'Brasil'
   },
   {
     id: 1,
     icon: euaIcon,
-    value: '+1'
+    value: '+1',
+    name: 'Estados Unidos'
   }
 ];
 
@@ -74,9 +76,10 @@ const InputPhone = ({onChange, labelText, validationStatus}) => {
           ? (
             <Dropdown>
               {
-                COUNTRY_OPTIONS.map(({value, icon}, index) => (
+                COUNTRY_OPTIONS.map(({value, icon, name}, index) => (
                   <DropdownItem key={value} onClick={() => handleChangeDropdownItem(index)}>
                     <CountryIcon src={icon}/>
+                    { name }
                   </DropdownItem>
                 ))
               }

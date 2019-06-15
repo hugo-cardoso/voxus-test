@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
 
   @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
   
-  body {overflow: hidden;}
+  body {overflow-x: hidden;}
 `;
 
 const View = styled.div`
@@ -40,6 +40,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  padding-bottom: 166px;
 `;
 
 export {

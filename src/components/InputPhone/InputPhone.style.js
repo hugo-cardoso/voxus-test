@@ -39,9 +39,13 @@ const FieldSelect = styled.div`
   align-items: center;
 `;
 
-const CountryIcon = styled.img``;
+const CountryIcon = styled.img`
+  padding-right: 15px;
+`;
 
-const Dropdown = styled(SelectBase.Dropdown)``;
+const Dropdown = styled(SelectBase.Dropdown)`
+  width: 175px;
+`;
 
 const DropdownItem = styled(SelectBase.DropdownItem)``;
 

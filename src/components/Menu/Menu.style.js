@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import * as ContainerApp from '../../App.style';
+import * as AppBase from '../../App.style';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   box-sizing: border-box;
 `;
 
-const Container = styled(ContainerApp.Container)`
+const Container = styled(AppBase.Container)`
   display: flex;
   justify-content: flex-start;
   height: 100%;
