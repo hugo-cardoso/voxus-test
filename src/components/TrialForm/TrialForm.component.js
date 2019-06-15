@@ -55,7 +55,8 @@ const TrialForm = ({onSubmit}) => {
       required: true
     }, name));
     setPhoneError(validate({
-      required: true
+      required: true,
+      minLength: 10
     }, phone));
     setEmailError(validate({
       type: 'EMAIL',
