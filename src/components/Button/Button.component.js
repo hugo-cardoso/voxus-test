@@ -3,10 +3,10 @@ import {
   Wrapper
 } from './Button.style';
 
-const Button = ({onClick, label, variant}) => {
+const Button = ({onClick, label, variant, isDisable}) => {
 
   return (
-    <Wrapper variant={variant} onClick={() => onClick()}>{ label }</Wrapper>
+    <Wrapper variant={variant} onClick={() => onClick()} disabled={isDisable}>{ label }</Wrapper>
   )
 }
 

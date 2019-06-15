@@ -15,7 +15,6 @@ import {
 const App = () => {
 
   const handleSubmitForm = (values) => {
-
     console.log(values);
     sendForm(values);
   }
@@ -33,7 +32,6 @@ const App = () => {
             />
             <Panel>
               <TrialForm onSubmit={values => handleSubmitForm(values)}/>
-
             </Panel>
           </Content>
         </Container>

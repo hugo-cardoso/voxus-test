@@ -130,7 +130,8 @@ const TrialForm = ({onSubmit}) => {
         variant={sendedForm ? 'outline' : 'primary'}
         label={labelButton}
         onClick={() => handleSubmit()}
-        />
+        isDisable={sendedForm}
+      />
         {
           sendedForm
           ? <Message>Entraremos em contato em até 24hs úteis.</Message>
