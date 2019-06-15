@@ -45,8 +45,9 @@ const InputPhone = ({onChange, labelText, validationStatus}) => {
   };
 
   const handleChangeField = text => {
-    setValue(text);
-    sendData(COUNTRY_OPTIONS[countryValue].value, text);
+    const onlyNumbers = text.replace(/[^\d]/,'');
+    setValue(onlyNumbers);
+    sendData(COUNTRY_OPTIONS[countryValue].value, onlyNumbers);
   }
 
   const handleBlurField = () => {
